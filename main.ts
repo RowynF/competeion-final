@@ -5,7 +5,10 @@ namespace SpriteKind {
     export const shop = SpriteKind.create()
 }
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Player, function (sprite, otherSprite) {
-    tiles.setCurrentTilemap(tilemap`level3`)
+    tiles.setCurrentTilemap(tilemap`shop`)
+})
+scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.collectibleInsignia, function (sprite, location) {
+	
 })
 let amount = 0
 let Coins = 0
@@ -1544,3 +1547,6 @@ if (story.checkLastAnswer("Yes")) {
         }
     }
 }
+forever(function () {
+	
+})
