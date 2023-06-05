@@ -5,7 +5,7 @@ namespace SpriteKind {
     export const shop = SpriteKind.create()
 }
 sprites.onOverlap(SpriteKind.Player, SpriteKind.shop, function (sprite, otherSprite) {
-	
+    tiles.setCurrentTilemap(tilemap`level2`)
 })
 let amount = 0
 let Coins = 0
