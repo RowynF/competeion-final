@@ -273,7 +273,7 @@ scene.setBackgroundImage(img`
     8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888
     ee88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888
     `)
-game.showLongText("We have been living on this planet for many years actually  actually millions of years...", DialogLayout.Bottom)
+game.showLongText("We have been living on this planet for many years actually millions of years...", DialogLayout.Bottom)
 scene.setBackgroundImage(img`
     9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
     9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
@@ -398,9 +398,9 @@ scene.setBackgroundImage(img`
     `)
 game.showLongText("As time went on we have developed this planet to better support our needs", DialogLayout.Bottom)
 game.showLongText("With this we have never thought of our planet!", DialogLayout.Bottom)
-game.splash("We have made toxic!")
-game.splash("Plastics")
-game.splash("We have cut tress")
+game.splash("We have made it toxic!")
+game.splash("Plastics!!!")
+game.splash("We have are cutting trees")
 game.showLongText("Your on the mission to replant tress and clean this trash from this plant FOREVER!!!", DialogLayout.Bottom)
 game.splash("Are you Ready!!!")
 story.showPlayerChoices("Yes", "No")
