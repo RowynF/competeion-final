@@ -405,7 +405,7 @@ game.showLongText("Your on the mission to replant tress and clean this trash fro
 game.splash("Are you Ready!!!")
 story.showPlayerChoices("Yes", "No")
 if (story.checkLastAnswer("Yes")) {
-    game.showLongText("That s what we need to change this plant FOREVER!!!", DialogLayout.Bottom)
+    game.showLongText("That's what we need to change this plant FOREVER!!!", DialogLayout.Bottom)
     game.showLongText("Now you do need a character", DialogLayout.Bottom)
     game.showLongText("Choose on of this", DialogLayout.Bottom)
     sprites.create(img`
