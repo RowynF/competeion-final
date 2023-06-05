@@ -4,8 +4,8 @@ namespace SpriteKind {
     export const Plant = SpriteKind.create()
     export const shop = SpriteKind.create()
 }
-sprites.onOverlap(SpriteKind.Player, SpriteKind.shop, function (sprite, otherSprite) {
-    tiles.setCurrentTilemap(tilemap`level2`)
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Player, function (sprite, otherSprite) {
+    tiles.setCurrentTilemap(tilemap`level3`)
 })
 let amount = 0
 let Coins = 0
