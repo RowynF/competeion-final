@@ -368,4 +368,8 @@ scene.setBackgroundImage(img`
     ................................................................................................................................................................
     `)
 game.showLongText("As time went on we have developed this planet to better support our needs", DialogLayout.Bottom)
-game.showLongText("With this we have never thought ", DialogLayout.Bottom)
+game.showLongText("With this we have never thought of our planet!", DialogLayout.Bottom)
+game.splash("We have made toxic!")
+game.splash("Plastics")
+game.splash("We have cut tress")
+game.showLongText("", DialogLayout.Bottom)
