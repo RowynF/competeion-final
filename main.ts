@@ -141,8 +141,8 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.t10, function (sprite, otherSpri
 let Buy: Sprite = null
 let Shop: Sprite = null
 let Bridge: Sprite = null
-let Coins = 0
 let amount = 0
+let Coins = 0
 let mySprite: Sprite = null
 let _15: Sprite = null
 let _14: Sprite = null
@@ -1152,7 +1152,7 @@ if (story.checkLastAnswer("Yes")) {
         characterAnimations.rule(Predicate.MovingRight)
         )
     }
-    info.setScore(amount)
+    info.setScore(0)
     Coins = 0
     amount = 0
     _1 = sprites.create(img`
@@ -1168,7 +1168,7 @@ if (story.checkLastAnswer("Yes")) {
         .........ff.........
         .........cf.........
         .........cc.........
-        ........cccc........
+        ........ccc3........
         .......cbbccc.......
         .......cbcccc.......
         .......cccccc.......
