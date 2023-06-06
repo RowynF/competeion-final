@@ -37,6 +37,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.shop, function (sprite, otherSpr
         Coins = amount / 5
         game.splash("Amount of Coins", Coins)
         amount = 0
+        info.setScore(0)
     } else {
         game.showLongText("You need to collect trash ending with 5 or 0", DialogLayout.Bottom)
         game.showLongText("Would you like to know more about this recycling point", DialogLayout.Bottom)
@@ -1588,8 +1589,8 @@ if (story.checkLastAnswer("Yes")) {
         .....bdbbbdddcbbf3b33b33b33b33bebbcdddbbbdb.....
         ......bcccbbbcbbe3b33b33b33b33bebbcbbbcccb......
         `, SpriteKind.Buyer)
-    tiles.placeOnTile(Buy, tiles.getTileLocation(14, 33))
     Buy.setScale(2, ScaleAnchor.Middle)
+    tiles.placeOnTile(Buy, tiles.getTileLocation(14, 33))
 } else {
     game.showLongText("Do you want to know more about pollution?", DialogLayout.Bottom)
     story.showPlayerChoices("Yes", "No")
