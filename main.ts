@@ -24,6 +24,29 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.shop, function (sprite, otherSpr
         }
     }
 })
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Buyer, function (sprite, otherSprite) {
+    game.splash("Amount of coins :", Coins)
+    story.showPlayerChoices("20B - Wood", "30B - Plastic bag", "10B - Jute bag", "None")
+    if (story.checkLastAnswer("Wood")) {
+        if (true) {
+        	
+        } else {
+        	
+        }
+    } else if (story.checkLastAnswer("Plastic bag")) {
+        if (true) {
+        	
+        } else {
+        	
+        }
+    } else {
+        if (true) {
+        	
+        } else {
+        	
+        }
+    }
+})
 sprites.onOverlap(SpriteKind.Player, SpriteKind.trash, function (sprite, otherSprite) {
     tiles.placeOnRandomTile(_1, sprites.castle.tilePath5)
     tiles.placeOnRandomTile(_2, sprites.castle.tilePath5)
