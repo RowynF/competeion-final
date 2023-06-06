@@ -21,6 +21,16 @@ namespace SpriteKind {
     export const t14 = SpriteKind.create()
     export const t15 = SpriteKind.create()
 }
+sprites.onOverlap(SpriteKind.Player, SpriteKind.t15, function (sprite, otherSprite) {
+    tiles.placeOnRandomTile(_15, sprites.castle.tileGrass1)
+    amount += 1
+    info.changeScoreBy(1)
+})
+sprites.onOverlap(SpriteKind.Player, SpriteKind.t13, function (sprite, otherSprite) {
+    tiles.placeOnRandomTile(_12, sprites.castle.tileGrass1)
+    amount += 1
+    info.changeScoreBy(1)
+})
 sprites.onOverlap(SpriteKind.Player, SpriteKind.shop, function (sprite, otherSprite) {
     game.splash("Trash Collected", amount)
     if (amount % 5 == 0) {
@@ -37,6 +47,41 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.shop, function (sprite, otherSpr
             game.showLongText("Collect the trash from the wild save the planet and exchange it here for cash!!!", DialogLayout.Bottom)
         }
     }
+})
+sprites.onOverlap(SpriteKind.Player, SpriteKind.t11, function (sprite, otherSprite) {
+    tiles.placeOnRandomTile(_11, sprites.castle.tileGrass1)
+    amount += 1
+    info.changeScoreBy(1)
+})
+sprites.onOverlap(SpriteKind.Player, SpriteKind.t2, function (sprite, otherSprite) {
+    tiles.placeOnRandomTile(_2, sprites.castle.tilePath5)
+    amount += 1
+    info.changeScoreBy(1)
+})
+sprites.onOverlap(SpriteKind.Player, SpriteKind.t8, function (sprite, otherSprite) {
+    tiles.placeOnRandomTile(_8, sprites.castle.tileGrass1)
+    amount += 1
+    info.changeScoreBy(1)
+})
+sprites.onOverlap(SpriteKind.Player, SpriteKind.t7, function (sprite, otherSprite) {
+    tiles.placeOnRandomTile(_7, sprites.castle.tileGrass1)
+    amount += 1
+    info.changeScoreBy(1)
+})
+sprites.onOverlap(SpriteKind.Player, SpriteKind.t6, function (sprite, otherSprite) {
+    tiles.placeOnRandomTile(_6, sprites.castle.tileGrass1)
+    amount += 1
+    info.changeScoreBy(1)
+})
+sprites.onOverlap(SpriteKind.Player, SpriteKind.t5, function (sprite, otherSprite) {
+    tiles.placeOnRandomTile(_5, sprites.castle.tileGrass1)
+    amount += 1
+    info.changeScoreBy(1)
+})
+sprites.onOverlap(SpriteKind.Player, SpriteKind.t14, function (sprite, otherSprite) {
+    tiles.placeOnRandomTile(_14, sprites.castle.tileGrass1)
+    amount += 1
+    info.changeScoreBy(1)
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Buyer, function (sprite, otherSprite) {
     game.splash("Amount of coins :", Coins)
@@ -61,9 +106,35 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Buyer, function (sprite, otherSp
         }
     }
 })
+sprites.onOverlap(SpriteKind.Player, SpriteKind.t3, function (sprite, otherSprite) {
+    tiles.placeOnRandomTile(_3, sprites.castle.tilePath5)
+    amount += 1
+    info.changeScoreBy(1)
+})
+sprites.onOverlap(SpriteKind.Player, SpriteKind.t12, function (sprite, otherSprite) {
+    tiles.placeOnRandomTile(_12, sprites.castle.tileGrass1)
+    amount += 1
+    info.changeScoreBy(1)
+})
+sprites.onOverlap(SpriteKind.Player, SpriteKind.t4, function (sprite, otherSprite) {
+    tiles.placeOnRandomTile(_4, sprites.castle.tileGrass1)
+    amount += 1
+    info.changeScoreBy(1)
+})
 sprites.onOverlap(SpriteKind.Player, SpriteKind.trash, function (sprite, otherSprite) {
     tiles.placeOnRandomTile(_1, sprites.castle.tilePath5)
     amount += 1
+    info.changeScoreBy(1)
+})
+sprites.onOverlap(SpriteKind.Player, SpriteKind.t9, function (sprite, otherSprite) {
+    tiles.placeOnRandomTile(_9, sprites.castle.tileGrass1)
+    amount += 1
+    info.changeScoreBy(1)
+})
+sprites.onOverlap(SpriteKind.Player, SpriteKind.t10, function (sprite, otherSprite) {
+    tiles.placeOnRandomTile(_10, sprites.castle.tileGrass1)
+    amount += 1
+    info.changeScoreBy(1)
 })
 let Buy: Sprite = null
 let Shop: Sprite = null
@@ -86,6 +157,7 @@ let _4: Sprite = null
 let _3: Sprite = null
 let _2: Sprite = null
 let _1: Sprite = null
+info.setScore(0)
 scene.setBackgroundImage(img`
     9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
     9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
