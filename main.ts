@@ -20,6 +20,7 @@ namespace SpriteKind {
     export const t13 = SpriteKind.create()
     export const t14 = SpriteKind.create()
     export const t15 = SpriteKind.create()
+    export const building = SpriteKind.create()
 }
 sprites.onOverlap(SpriteKind.Player, SpriteKind.t15, function (sprite, otherSprite) {
     tiles.placeOnRandomTile(_15, sprites.castle.tileGrass1)
@@ -1352,7 +1353,7 @@ if (story.checkLastAnswer("Yes")) {
         ....................
         ....................
         `, SpriteKind.t9)
-    Bridge = sprites.create(assets.image`Bridge`, SpriteKind.Player)
+    Bridge = sprites.create(assets.image`Bridge`, SpriteKind.building)
     Shop = sprites.create(img`
         ....................e2e22e2e....................
         .................222eee22e2e222.................
